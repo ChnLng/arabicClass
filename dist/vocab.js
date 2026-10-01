@@ -409,7 +409,7 @@ const RAW = `
 أَخِير|dernier|最后的|qualities|199
 خَلْفَ|derrière|在后面|grammar|199
 نَزَلَ|descendre|下降，下车|verbs|199
-جَوَار|dialogue|对话|school|199
+حِوَار|dialogue|对话|school|199
 الأَحَد|dimanche|星期日|time|199
 إِذَنْ|donc|因此|grammar|199
 أَعْطِنِي|donne-moi|给我|phrases|199
