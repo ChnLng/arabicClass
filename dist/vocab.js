@@ -1094,6 +1094,22 @@ const COURSE_RAW = `
 عُمَان|Oman|阿曼|places|73
 الْيَمَن|Yémen|也门|places|73
 الْبَحْر الْأَحْمَر|mer Rouge|红海|nature|73
+خُبْز|pain|面包|food|25
+تَحْت|sous, en-dessous|在……下面|grammar|25
+دَرْس|leçon|课|school|25
+ثَلْج|neige|雪|nature|25
+شَرِبَ|il a bu|他喝了|verbs|25
+وَاحِد|un|一|numbers|25
+وَحِيد|seul|独自的|qualities|25
+دَجَاج|poulet|鸡肉，鸡|food|25
+شَاي|thé|茶|food|25
+دَخَلَ|il est entré|他进去了|verbs|25
+يَدْخُلُ|il entre|他进入|verbs|25
+الْحَال|état, situation|状况|concepts|25
+بِخَيْر|bien|好，安好|phrases|25
+تَارِيخ|date, histoire|日期，历史|time|25
+الْجَبْر|algèbre|代数学|concepts|25
+جِسْر سِيدِي رَاشِد|pont Sidi Rached|西迪·拉希德桥|places|25
 `;
 
 const THEME_ORDER = ['phrases','people','family','questions','numbers','time','qualities','home','school','food','places','travel','verbs','nature','body','grammar','concepts'];
