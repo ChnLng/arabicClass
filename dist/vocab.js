@@ -900,6 +900,200 @@ const COURSE_RAW = `
 بَيْت|maison|房子|home|70
 يَد|main|手|body|70
 حَلِيب|lait|牛奶|food|70
+دَار|maison|房屋|home|19
+زَارَ|il a visité|他拜访了|verbs|19
+وَلَد|garçon|男孩|family|19
+يَزُورُ|il visite|他拜访|verbs|19
+وَادِي|vallée|山谷|nature|19
+وَ|et|和|grammar|19
+زَاي|lettre zāy|阿拉伯字母 ز 的名称|school|19
+يَدِي|ma main|我的手|body|19
+وَلَدِي|mon fils|我的儿子|family|19
+لَوْز|amande|杏仁|food|19
+وَزِير|ministre|部长|people|19
+يُرِيدُ|il veut|他想要|verbs|19
+رُزّ|riz|大米|food|19
+كُلّ شَيْء تَمَام|tout va bien|一切都好|phrases|13
+يَا أُسْتَاذ|monsieur le professeur !|老师！|phrases|13
+أُحِبُّ اللُّغَة الْعَرَبِيَّة|j'aime la langue arabe|我喜欢阿拉伯语|phrases|13
+كَيْفَ نَقُولُ؟|comment dit-on ?|怎么说？|phrases|13
+تَسْكُنُ|tu habites|你住|verbs|13
+عَرْض|exposé|报告，展示|school|36
+سَاعَة|heure|小时|time|36
+عُطْلَة|vacances|假期|time|36
+شَارِع|rue|街道|places|36
+شَرِيعَة|loi islamique|伊斯兰教法|concepts|36
+بَيَّاع|vendeur|售货员|people|36
+تَارِيخ|date, histoire|日期，历史|time|36
+طَارِق|Tariq (prénom)|塔里克（人名）|people|36
+سَعِيد|heureux|高兴的|qualities|36
+فِي|dans|在……里|grammar|36
+رِيف|campagne|乡村|places|36
+فَعَلْتَ|tu as fait (masculin)|你做了（男）|verbs|36
+قَالَ|il a dit|他说了|verbs|36
+صَدِيق|ami|朋友|people|36
+قِطَار|train|火车|travel|36
+حَلِيب|lait|牛奶|food|37
+حِوَار|dialogue|对话|school|37
+ثَلْج|neige|雪|nature|37
+دَرَسَ|il a étudié|他学习了|verbs|37
+طَالِب|étudiant|学生（男）|school|37
+صَعْب|difficile|难的|qualities|37
+قَالَ صَدِيقِي|mon ami a dit|我的朋友说了|phrases|37
+بَعْدَ سَاعَة|après une heure|一小时以后|time|37
+فِي الْعُطْلَة|pendant les vacances|在假期里|phrases|37
+سَافَرْتُ بِالْقِطَار|j'ai voyagé en train|我乘火车旅行了|phrases|37
+شَرِبْتُ عَصِيرَ بُرْتُقَال|j'ai bu du jus d'orange|我喝了橙汁|phrases|37
+لَازِم|nécessaire|必要的|qualities|39
+خَلَاص|ça suffit, c'est fini|够了，结束了|phrases|39
+كِلَاب|chiens|狗（复数）|nature|39
+كُلّ|tout, chaque|所有，每个|grammar|39
+لَا يَعْرِفُ|il ne sait pas|他不知道|phrases|39
+طُلَّاب|étudiants|学生们|school|39
+بَلَد|pays|国家|places|39
+بِلَاد|pays (pluriel)|国家（复数）|places|39
+تَفَضَّل|je t'en prie|请，请进|phrases|39
+لَطِيفَة|gentille (féminin)|友善的（女）|qualities|39
+دَفْتَر|cahier|练习本|school|39
+نَصّ|texte|课文，文本|school|44
+تَفَضَّل|je t'en prie|请，请进|phrases|44
+سَاعَة|heure|小时|time|44
+مِنْذُ|depuis|自从|grammar|44
+عِنْدِي|j'ai|我有|grammar|44
+وَلَكِنْ|mais|但是|grammar|44
+مَعَ|avec|和……一起|grammar|44
+مُشْكِلَة|problème|问题|concepts|44
+فَنْدَق|hôtel|旅馆|travel|44
+مُمْتَاز|excellent|极好的|qualities|44
+فَرَنْسِيَّة|française (féminin)|法国的（女）|people|44
+سَلَام|paix|和平|concepts|44
+شَاي|thé|茶|food|44
+يَوْم|jour|日，天|time|44
+مَدْرَسَة|école|学校|school|45
+عُطْلَة|vacances|假期|time|45
+حَلِيب|lait|牛奶|food|45
+تَمْرِين|exercice|练习|school|45
+هُنَا|ici|这里|places|45
+كُنْتُ|j'étais|我曾是／我当时在|verbs|45
+مَنْ|qui ?|谁？|questions|45
+مِنْ|de, depuis|从，属于|grammar|45
+مَاذَا|qu'est-ce que ?|什么？|questions|45
+هَلْ|est-ce que ?|是否？|questions|45
+مَطْعَم|restaurant|餐馆|places|45
+شَمَال|nord|北方|places|45
+جَنُوب|sud|南方|places|45
+عُنْوَان|adresse, titre|地址，标题|concepts|45
+مَتْحَف|musée|博物馆|places|45
+مَعْرِض|exposition|展览|concepts|45
+ذَهَبَ|il est allé|他去了|verbs|45
+فَهِمَ|il a compris|他理解了|verbs|45
+وَصَلَ|il est arrivé|他到达了|verbs|45
+إِلَى|vers, à|向，到|grammar|50
+عَلَى|sur|在……上|grammar|50
+اِشْتَرَى|il a acheté|他买了|verbs|50
+اِلْتَقَى|il a rencontré|他遇见了|verbs|50
+أَبْقَى|je reste|我留下|verbs|50
+مَشَى|il a marché|他走了|verbs|50
+رَأَى|il a vu|他看见了|verbs|50
+إِلَيْكَ|vers toi (masculin)|向你（男）|grammar|50
+عَلَيْكُمْ|sur vous (pluriel)|在你们身上|grammar|50
+اِشْتَرَيْتُ|j'ai acheté|我买了|verbs|50
+اِلْتَقَيْتُ|j'ai rencontré|我遇见了|verbs|50
+بَقِيتُ|je suis resté|我留下了|verbs|50
+مَشَيْتُ|j'ai marché|我走了|verbs|50
+رَأَيْتُ|j'ai vu|我看见了|verbs|50
+آسِف|désolé|抱歉|phrases|50
+الآن|maintenant|现在|time|50
+أَب|père|父亲|family|50
+آب|août|八月|time|50
+لِأَنَّ|parce que|因为|grammar|51
+الْجَزَائِر|Algérie|阿尔及利亚|places|51
+أَسْئِلَة|questions|问题（复数）|school|51
+مُتَأَخِّر|en retard|迟到的|qualities|51
+أُسْتَاذ|professeur|老师|people|51
+سَمَاء|ciel|天空|nature|51
+مَسَاء|soir|晚上|time|51
+أَشْيَاء|choses|东西（复数）|concepts|51
+شَيْء|chose|东西|concepts|51
+مَكْتَبَة|bibliothèque|图书馆|places|51
+مِئَة|cent|一百|numbers|51
+كَأْس|verre|杯子|home|51
+سَأَلَ|il a demandé|他问了|verbs|51
+إِذَنْ|donc|那么，因此|grammar|51
+مَعْنًى|sens|意思|concepts|51
+لَيْلَى|Leïla (prénom)|莱拉（人名）|people|51
+مَتَى|quand|什么时候|questions|51
+حَتَّى|jusqu'à|直到|grammar|51
+جِئْتُ|je suis venu|我来了|verbs|52
+لَا أَعْرِفُ|je ne sais pas|我不知道|phrases|52
+قَرَأَ|il a lu|他读了|verbs|52
+اِجْتِمَاع|réunion|会议|concepts|52
+جَاءَ|il est venu|他来了|verbs|52
+أَيْنَ الْمَطْعَم؟|où est le restaurant ?|餐馆在哪里？|phrases|52
+ذَهَبَ إِلَى الْمَقْهَى|il est allé au café|他去了咖啡馆|phrases|52
+قَلِيلًا|un peu|一点儿|grammar|60
+كَثِيرًا|beaucoup|很多|grammar|60
+أَبَدًا|jamais|从不|grammar|60
+أَيْضًا|aussi|也|grammar|60
+طَبْعًا|bien sûr|当然|grammar|60
+دَائِمًا|toujours|总是|grammar|60
+عَفْوًا|pardon|对不起，不客气|phrases|60
+شُكْرًا|merci|谢谢|phrases|60
+يَدْرُسُ دَرْسًا|il étudie une leçon|他学习一课|phrases|61
+يَكْتُبُ كِتَابًا|il écrit un livre|他写一本书|phrases|61
+كَتَبَ الطَّالِبُ الدَّرْسَ عَلَى الدَّفْتَرِ|l'étudiant a écrit la leçon dans le cahier|学生在本子上写下了课文|phrases|61
+جَبْر|algèbre|代数学|concepts|61
+سُلْطَان|sultan|苏丹|people|61
+كُحُول|alcool|酒精|concepts|61
+كُورْد|Kurdes|库尔德人|people|61
+بَرْلَمَان|parlement|议会|concepts|61
+أَرْخَبِيل|archipel|群岛|nature|61
+قُنْصُلِيَّة|consulat|领事馆|places|61
+سِينَمَا|cinéma|电影院，电影|concepts|61
+غَزَال|gazelle|瞪羚|nature|61
+أَمِير الْبَحْر|amiral|海军上将|people|61
+مُوسِيقَى|musique|音乐|concepts|61
+تِلِفِزْيُون|télévision|电视|home|61
+فَيْلَسُوف|philosophe|哲学家|people|61
+دِبْلُومَاسِيَّة|diplomatie|外交|concepts|61
+فَرَنْسَا|France|法国|places|73
+أَلْمَانْيَا|Allemagne|德国|places|73
+سُوَيْسْرَا|Suisse|瑞士|places|73
+إِسْبَانْيَا|Espagne|西班牙|places|73
+الْبُرْتُغَال|Portugal|葡萄牙|places|73
+إِيطَالْيَا|Italie|意大利|places|73
+رُومَانْيَا|Roumanie|罗马尼亚|places|73
+رُوسْيَا|Russie|俄罗斯|places|73
+أُوكْرَانْيَا|Ukraine|乌克兰|places|73
+الْيُونَان|Grèce|希腊|places|73
+تُرْكِيَا|Turquie|土耳其|places|73
+جَزِيرَة كُورْسِيكَا|Corse|科西嘉岛|places|73
+الْبَحْر الْأَسْوَد|mer Noire|黑海|nature|73
+الْبَحْر الْمُتَوَسِّط|mer Méditerranée|地中海|nature|73
+الْمَغْرِب|Maroc|摩洛哥|places|73
+الْجَزَائِر|Algérie|阿尔及利亚|places|73
+تُونِس|Tunisie|突尼斯|places|73
+لِيبِيَا|Libye|利比亚|places|73
+مِصْر|Égypte|埃及|places|73
+مُورِيتَانْيَا|Mauritanie|毛里塔尼亚|places|73
+مَالِي|Mali|马里|places|73
+النِّيْجَر|Niger|尼日尔|places|73
+تْشَاد|Tchad|乍得|places|73
+السُّودَان|Soudan|苏丹|places|73
+جَنُوب السُّودَان|Soudan du Sud|南苏丹|places|73
+إِثْيُوبْيَا|Éthiopie|埃塞俄比亚|places|73
+الصُّومَال|Somalie|索马里|places|73
+سُورِيَا|Syrie|叙利亚|places|73
+لُبْنَان|Liban|黎巴嫩|places|73
+الْأُرْدُنّ|Jordanie|约旦|places|73
+فِلَسْطِين|Palestine|巴勒斯坦|places|73
+الْعِرَاق|Irak|伊拉克|places|73
+إِيرَان|Iran|伊朗|places|73
+الْمَمْلَكَة الْعَرَبِيَّة السُّعُودِيَّة|Arabie saoudite|沙特阿拉伯|places|73
+الْإِمَارَات الْعَرَبِيَّة الْمُتَّحِدَة|Émirats arabes unis|阿拉伯联合酋长国|places|73
+عُمَان|Oman|阿曼|places|73
+الْيَمَن|Yémen|也门|places|73
+الْبَحْر الْأَحْمَر|mer Rouge|红海|nature|73
 `;
 
 const THEME_ORDER = ['phrases','people','family','questions','numbers','time','qualities','home','school','food','places','travel','verbs','nature','body','grammar','concepts'];
