@@ -4,7 +4,7 @@ A mobile first Arabic vocabulary app for French and Chinese learners. It is base
 
 ## Features
 
-- 510 manually organized study entries across 17 themes
+- 545 manually organized study entries across 17 themes
 - French / Chinese interface, meanings, and grammar notes
 - Flip cards, audio recognition, and finger tracing
 - Arabic text to speech through the browser's `speechSynthesis` API
