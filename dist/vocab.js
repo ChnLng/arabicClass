@@ -866,6 +866,40 @@ const COURSE_RAW = `
 نِينَا|Nina (prénom)|妮娜（人名）|people|73
 مَاكْسِيم|Maxime (prénom)|马克西姆（人名）|people|73
 كْلِير|Claire (prénom)|克莱尔（人名）|people|73
+حِوَار|dialogue|对话|school|70
+دَرْس|leçon|课|school|70
+وَاحِد|un|一|numbers|70
+جَبَل|montagne|山|nature|70
+خُبْز|pain|面包|food|70
+بَحْر|la mer|大海|nature|70
+طَالِب|étudiant|学生（男）|school|70
+طُلَّاب|étudiants|学生们|school|70
+يُوجَد|il y a|有|grammar|70
+شَارِع|rue|街道|places|70
+سَيَّارَة|voiture|汽车|travel|70
+صَدِيق|ami|朋友|people|70
+خُضَار|légumes|蔬菜|food|70
+صَغِير|petit|小的|qualities|70
+بَاب|porte|门|home|70
+زَيْت|huile|油|food|70
+وَلَد|enfant / garçon|男孩，孩子|family|70
+دَرَسَ|il a étudié|他学习了|verbs|70
+خَرَجَ|il est sorti|他出去了|verbs|70
+شَرِبَ|il a bu|他喝了|verbs|70
+مَعْنًى|sens|意思|concepts|70
+فَعَلَ|faire|做|verbs|70
+لَذِيذ|délicieux|好吃的|qualities|70
+طَبَخَ|cuisiner|做饭|verbs|70
+دَجَاجَات|poulets|鸡（复数）|food|70
+مَا|quel est|什么是|questions|70
+عِنْدِي|j'ai|我有|grammar|70
+مَتَى|quand|什么时候|questions|70
+كَيْفَ|comment|怎样|questions|70
+عَرْض|exposé|报告，展示|school|70
+قِطَار|train|火车|travel|70
+بَيْت|maison|房子|home|70
+يَد|main|手|body|70
+حَلِيب|lait|牛奶|food|70
 `;
 
 const THEME_ORDER = ['phrases','people','family','questions','numbers','time','qualities','home','school','food','places','travel','verbs','nature','body','grammar','concepts'];
