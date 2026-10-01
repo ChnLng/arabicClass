@@ -278,7 +278,7 @@ const RAW = `
 عِنْدَكَ|tu as (masc.)|你有（男）|grammar|80
 عِنْدَكِ|tu as (fém.)|你有（女）|grammar|80
 عِنْدَهُ|il a|他有|grammar|80
-هُنَاكَ|il y a|有；那里有|grammar|200
+يُوجَد|il y a, il existe|有；存在|grammar|200
 أُرِيدُ|je veux|我想要|verbs|76
 أُحِبُّ|j'aime|我喜欢|verbs|76
 أَذْهَبُ|je vais|我去|verbs|76
@@ -514,6 +514,41 @@ const RAW = `
 اِجْتَمَعَ|se réunir|聚集|verbs|202
 سُورِيّ|syrien|叙利亚人；叙利亚的|people|202
 قَدِيش|combien ? (dialectal)|多少？（方言）|questions|199
+قَبِيح|laid|丑的|qualities|204
+بَشِع|très laid|难看的|qualities|204
+غَلِيظ|méchant, rude|粗鲁的|qualities|204
+كَرِيم|généreux|慷慨的|qualities|204
+بَخِيل|avare|吝啬的|qualities|204
+نَحِيف|mince|瘦的|qualities|204
+سَمِين|gros|胖的|qualities|204
+بَدِين|corpulent|肥胖的|qualities|204
+عَادِي|normal, ordinaire|普通的|qualities|204
+غَالِي|cher|昂贵的|qualities|204
+رَخِيص|pas cher|便宜的|qualities|204
+إِيجَابِيّ|positif|积极的，肯定的|qualities|204
+سَلْبِيّ|négatif|消极的，否定的|qualities|204
+قَدِيم|vieux, ancien|古老的，旧的|qualities|204
+أَوْرَاق|feuilles, papiers|纸张（复数）|school|200
+فَرَنْسِيَّة|française|法国人（女）；法语的|people|200
+اِشْتَرَيْتُ|j'ai acheté|我买了|verbs|200
+نِمْتُ|j'ai dormi|我睡了|verbs|200
+تَفَضَّلْ|je t'en prie (masc.)|请（对男性）|phrases|200
+تَفَضَّلِي|je t'en prie (fém.)|请（对女性）|phrases|200
+تَفَضَّلُوا|je vous en prie|请（对多人）|phrases|200
+عِنْدِي أَلَم|j'ai mal|我疼|phrases|200
+مَا عِنْدِي|je n'ai pas|我没有|grammar|200
+مَا كَانَ يُوجَد|il n'y avait pas|过去没有|grammar|200
+يَا اللّٰه|allez, allons|走吧|phrases|201
+صِفَة|adjectif|形容词|school|201
+فُصْحَى|arabe littéral|标准阿拉伯语|school|201
+سَنَصِلُ|nous arriverons|我们将到达|verbs|201
+شَنْطَة|cartable, sac|书包|school|201
+مِكْتَبَة|librairie|书店|places|201
+عَلَيْهَا|sur laquelle|在它上面（阴性）|grammar|202
+مَا مَعْنَى|quel est le sens de… ?|……是什么意思？|phrases|202
+وَحِيد|seul|独自的|qualities|202
+مُخَابَرَات|service de renseignement|情报机构|concepts|202
+مَطَاعِم|restaurants|餐馆（复数）|food|202
 `;
 
 const THEME_ORDER = ['phrases','people','family','questions','numbers','time','qualities','home','school','food','places','travel','verbs','nature','body','grammar','concepts'];
