@@ -551,7 +551,324 @@ const RAW = `
 مَطَاعِم|restaurants|餐馆（复数）|food|202
 `;
 
+// Additional course vocabulary from the 60 photos supplied on 2026-10-01.
+// French-only exercise prompts have been answered in Arabic and included below.
+const COURSE_RAW = `
+بَاب|porte|门|home|20
+زَيْت|huile|油|food|20
+يَد|main|手|body|20
+وَزِير|ministre|部长|people|21
+زُرْتُ|j'ai visité|我参观了|verbs|21
+بِئْر|puits|井|nature|21
+ثَوْب|vêtement|衣服|home|21
+بُيُوت|maisons|房子（复数）|home|21
+بَارِد|frais, froid|凉的，冷的|qualities|21
+بَيْرُوت|Beyrouth|贝鲁特|places|21
+بَرِيد|poste, courrier|邮政，邮件|places|21
+ثَوْر|taureau|公牛|nature|21
+دُبّ|ours|熊|nature|21
+خُبْز|pain|面包|food|24
+جَبَل|montagne|山|nature|24
+وَاحِد|un (nombre)|一|numbers|24
+يُوجَد|il y a, il existe|有，存在|grammar|24
+جَزَر|carotte|胡萝卜|food|24
+دَجَاج|poulet|鸡肉，鸡|food|24
+رَجُل|homme|男人|people|24
+بُرْج|tour|塔|places|24
+تَاج|couronne|王冠|concepts|24
+خَرَجَ|il est sorti|他出去了|verbs|24
+دَخَلَ|il est entré|他进去了|verbs|26
+أَخْبَرَ|il a informé|他告知了|verbs|26
+حَجّ|pèlerinage|朝觐|concepts|26
+رَدَّ|il a répondu|他回答了|verbs|26
+يَصِلُ|il arrive|他到达|verbs|28
+بَيْض|œufs|鸡蛋|food|28
+خُضَار|légumes|蔬菜|food|28
+بَطَاطَا|pommes de terre|土豆|food|28
+شَخْص|personne|人|people|28
+رَخِيص|pas cher|便宜的|qualities|28
+وَصَلَ|il est arrivé|他到达了|verbs|28
+عَاصِمَة|capitale|首都|places|30
+حِوَار|dialogue|对话|school|31
+قِصَّة|histoire, récit|故事|school|31
+دَرَسَ|il a étudié|他学习了|verbs|31
+شَرِبَ|il a bu|他喝了|verbs|31
+سَأَلَ|il a demandé|他问了|verbs|31
+خَبَّاز|boulanger|面包师|people|31
+حَافِلَة|bus|公共汽车|travel|31
+جَيْش|armée|军队|concepts|31
+ضَابِط|officier|军官|people|31
+طَيَّار|pilote|飞行员|people|31
+رُحْتُ|je suis allé|我去了|verbs|31
+لُوسِي|Lucie|露西（人名）|people|31
+رَشِيد|Rachid|拉希德（人名）|people|31
+طَبَخَ|il a cuisiné|他做饭了|verbs|33
+طَبَّاخ|cuisinier|厨师|people|33
+شُرْطِيّ|policier|警察|people|33
+حَظّ|chance|运气|concepts|33
+الرِّبَاط|Rabat|拉巴特|places|33
+زِيَارَة|une visite|一次拜访|concepts|33
+مُسْتَشْفَى|hôpital|医院|places|35
+شَارِع|rue|街道|places|35
+كَلْب|chien|狗|nature|38
+كَاتِب|écrivain|作家|people|38
+كَتَبَ|il a écrit|他写了|verbs|38
+كَبِير|grand|大的|qualities|38
+صَغِير|petit|小的|qualities|38
+كِتَابَة|écriture|书写|school|38
+دَفْتَر|cahier|练习本|school|41
+مَدْرَسَة|école|学校|school|41
+مُشْكِلَة|problème|问题|concepts|41
+عُطْلَة|vacances|假期|time|41
+صَحْرَاء|désert|沙漠|nature|41
+شَمْس|soleil|太阳|nature|42
+صَابُون|savon|肥皂|home|42
+جَنُوب|sud|南方|places|42
+شَمَال|nord|北方|places|42
+نَصّ|texte|课文，文本|school|42
+سَنَة|année|年|time|42
+عَمَل|travail|工作|concepts|42
+مَطْعَم|restaurant|餐馆|places|42
+صَدِيق|ami|朋友|people|42
+لَحْم|viande|肉|food|42
+سَلَام|paix|和平|concepts|42
+جَامِعَة|université|大学|school|42
+قَمَر|lune|月亮|nature|42
+نَهَار|jour|白天|time|42
+لَيْل|nuit|夜晚|time|42
+صُورَة|image, photo|图片，照片|concepts|42
+تَكَلَّمَ|il a parlé|他说话了|verbs|42
+يَوْم|jour|日，天|time|42
+أَيّ|quel, lequel|哪个|questions|42
+أَيَّام|jours|日子（复数）|time|42
+لِمَاذَا|pourquoi|为什么|questions|42
+فَنْدَق|hôtel|旅馆|travel|43
+سَاعَة|heure, montre|小时，钟表|time|43
+فَرَنْسِيّ|français (masculin)|法国的（男）|people|43
+فَرَنْسِيَّة|française (féminin)|法国的（女）|people|43
+مُمْتَاز|excellent|极好的|qualities|43
+نَبِيذ|vin|葡萄酒|food|43
+وَلَكِنْ|mais|但是|grammar|43
+قَهْوَة|café (boisson)|咖啡|food|43
+شَهْر|mois|月份|time|43
+طَابِق|étage|楼层|home|43
+تَمْرِين|exercice|练习|school|43
+هُنَا|ici|这里|places|43
+كَانَ|il était|他曾经是|verbs|43
+فَوَاكِه|fruits|水果（复数）|food|43
+وُجُوه|visages|脸（复数）|body|43
+فَهِمَ|il a compris|他理解了|verbs|43
+سَفِينَة|bateau|船|travel|43
+مَعْرِض|exposition|展览|concepts|43
+عُنْوَان|adresse, titre|地址，标题|concepts|43
+مَتْحَف|musée|博物馆|places|43
+دَخَلْتُ|je suis entré|我进去了|verbs|45
+شَمْس|soleil|太阳|nature|45
+مَقْهَى|café (lieu)|咖啡馆|places|45
+وَحِيد|seul|独自的|qualities|45
+مِنْذُ|depuis|自从|grammar|45
+مَعَ|avec|和……一起|grammar|45
+عِنْدَ|chez, auprès de|在……处|grammar|45
+عِنْدِي|j'ai|我有|grammar|45
+سَكَنْتُ|j'ai habité|我居住过|verbs|47
+دَرَسْتُ|j'ai étudié|我学习了|verbs|47
+ذَهَبْتُ|je suis allé|我去了|verbs|47
+كُنْتُ|j'étais|我曾是／我当时在|verbs|47
+شَرِبْتُ|j'ai bu|我喝了|verbs|47
+فَعَلْتُ|j'ai fait|我做了|verbs|47
+فِي الْعُطْلَة|pendant les vacances|在假期里|phrases|47
+تَعْبَان|fatigué|疲倦的（男）|qualities|47
+شُوَيَّة|un peu|一点儿（口语）|grammar|47
+كَيْفَ حَالُكَ؟|comment vas-tu ? (masculin)|你好吗？（对男性）|phrases|47
+فِي الْجَبَل|à la montagne|在山里|phrases|47
+جَبَل طَارِق|Gibraltar|直布罗陀|places|47
+سَنَة حُلْوَة يَا جَمِيل|joyeux anniversaire|生日快乐|phrases|47
+عِيد مِيلَاد سَعِيد|joyeux anniversaire|生日快乐|phrases|47
+عِيد مِيلَاد مَجِيد|joyeux Noël|圣诞快乐|phrases|47
+كُلّ عَام وَأَنْتَ بِخَيْر|meilleurs vœux (masculin)|祝你年年安好（对男性）|phrases|47
+كُلّ سَنَة وَأَنْتَ طَيِّب|bonne fête (masculin)|节日快乐（对男性）|phrases|47
+سَنَة سَعِيدَة|bonne année|新年快乐|phrases|47
+اِسْتَخْدَمَ|il a utilisé|他使用了|verbs|48
+اِسْتَقْبَلَ|il a reçu|他接待了|verbs|48
+اِجْتِمَاع|réunion|会议|concepts|48
+مَسْؤُول|responsable|负责人|people|48
+سُؤَال|question|问题，提问|questions|48
+رَئِيس|président|主席，总统|people|48
+شَاطِئ|plage|海滩|nature|48
+طَائِرَة|avion|飞机|travel|48
+مَاء|eau|水|food|48
+مَسَاء|soir|晚上|time|48
+جَاءَ|il est venu|他来了|verbs|48
+أَب|père|父亲|family|48
+أُمّ|mère|母亲|family|48
+أُسْرَة|famille|家庭|family|48
+أَصْدِقَاء|amis|朋友们|people|48
+رَأْس|tête|头|body|48
+لَا أَعْرِف|je ne sais pas|我不知道|phrases|48
+مَا أَكَلْتُ|je n'ai pas mangé|我没吃|phrases|48
+أَدْرُسُ|j'étudie|我学习|verbs|48
+أَسْأَلُ|je demande|我问|verbs|48
+كَأْس|verre (récipient)|杯子|home|48
+صَدِيقِي|mon ami|我的朋友|people|54
+أَصْدِقَائِي|mes amis|我的朋友们|people|54
+عِنْدَكَ|tu as (masculin)|你有（男）|grammar|54
+عِنْدَكِ|tu as (féminin)|你有（女）|grammar|54
+عِنْدَهُ|il a|他有|grammar|54
+بِحَاجَةٍ إِلَى|avoir besoin de|需要|grammar|54
+مَرِيض|malade|生病的|qualities|54
+مُدِيرَة|directrice|女主任|people|54
+حَدِيقَة|jardin|花园|nature|54
+كَذَّاب|menteur|说谎的人|people|54
+حَزِين|triste|悲伤的|qualities|54
+قَصِير|petit, court|矮的，短的|qualities|54
+قَرِيب|proche|近的|qualities|54
+سَفَارَة|ambassade|大使馆|places|54
+وِزَارَة|ministère|部委|places|54
+لَنْدَن|Londres|伦敦|places|54
+بُرُوكْسِل|Bruxelles|布鲁塞尔|places|54
+بَرْلِين|Berlin|柏林|places|54
+دُبَيّ|Dubaï|迪拜|places|54
+مِسْكِين|pauvre, malheureux|可怜的|qualities|58
+تَفَضَّلْ|je t'en prie (masculin)|请（对男性）|phrases|58
+الْحَمْدُ لِلَّه|Dieu merci|感谢真主|phrases|58
+عِنْدِي سُؤَال|j'ai une question|我有一个问题|phrases|58
+عِنْدَكَ جَوَاز سَفَر؟|as-tu un passeport ? (masculin)|你有护照吗？（对男性）|phrases|58
+جَوَاز سَفَر|passeport|护照|travel|58
+مَتَى تَذْهَبُ إِلَى لُبْنَان؟|quand vas-tu au Liban ?|你什么时候去黎巴嫩？|phrases|58
+فِي الصَّيْف|en été|在夏天|time|58
+حُمُّص|hoummous|鹰嘴豆泥|food|58
+تَبُّولَة|taboulé|塔布勒沙拉|food|58
+سَلَطَة|salade|沙拉|food|58
+جُبْنَة|fromage|奶酪|food|58
+مَعَ السَّلَامَة|au revoir|再见|phrases|58
+مَسَاء الْخَيْر|bonsoir (salutation)|晚上好|phrases|58
+مَسَاء النُّور|bonsoir (réponse)|晚上好（回答）|phrases|58
+كَيْفَ الْحَال؟|comment ça va ?|近况如何？|phrases|58
+أَنَا لَا أُحِبّ الْحُمُّص|je n'aime pas le hoummous|我不喜欢鹰嘴豆泥|phrases|58
+أُحِبّ التَّبُّولَة|j'aime le taboulé|我喜欢塔布勒沙拉|phrases|58
+اِسْمِي|je m'appelle|我的名字是|phrases|62
+تَشَرَّفْنَا|enchanté|幸会|phrases|62
+عَفْوًا|je t'en prie, pardon|不客气，对不起|phrases|62
+شُكْرًا جَزِيلًا|merci beaucoup|非常感谢|phrases|62
+أَنَا أَسْكُنُ فِي بَارِيس|j'habite à Paris|我住在巴黎|phrases|62
+عِنْدِي بَيْت فِي بَارِيس|j'ai une maison à Paris|我在巴黎有一套房子|phrases|62
+ذَهَبْتُ مَعَ صَدِيقٍ إِلَى الْجَامِعَة|je suis allé à l'université avec un ami|我和朋友去了大学|phrases|62
+أَسْكُنُ|j'habite|我住|verbs|62
+أَعْمَلُ|je travaille|我工作|verbs|64
+أَتَكَلَّمُ الْعَرَبِيَّة|je parle arabe|我说阿拉伯语|phrases|64
+أَدْرُسُ الْعَرَبِيَّة|j'étudie l'arabe|我学习阿拉伯语|phrases|64
+نَأْكُلُ|nous mangeons|我们吃|verbs|64
+فَلَافِل|falafels|炸鹰嘴豆丸子|food|64
+بَقْلَاوَة|baklawa|果仁蜜饼|food|64
+أُحِبُّ|j'aime|我喜欢|verbs|64
+لَا أُحِبُّ|je n'aime pas|我不喜欢|verbs|64
+أَذْهَبُ|je vais|我去|verbs|64
+أَكْتُبُ|j'écris|我写|verbs|64
+تَكْتُبُ|tu écris (masculin), elle écrit|你写（男），她写|verbs|64
+تَكْتُبِينَ|tu écris (féminin)|你写（女）|verbs|64
+يَكْتُبُ|il écrit|他写|verbs|64
+أَكَلْتُ|j'ai mangé|我吃了|verbs|65
+تَكَلَّمْتُ|j'ai parlé|我说了|verbs|65
+عَمِلْتُ|j'ai travaillé|我工作了|verbs|65
+بِالضَّبْط|exactement|确切地说|phrases|65
+رُزّ|riz|米饭|food|65
+سَمَك|poisson|鱼|food|65
+بَيْض|œufs|鸡蛋|food|65
+عَصِير بُرْتُقَال|jus d'orange|橙汁|food|65
+قَهْوَة بِالْحَلِيب|café au lait|牛奶咖啡|food|65
+مَاذَا أَكَلْتَ هُنَاكَ؟|qu'as-tu mangé là-bas ?|你在那里吃了什么？|phrases|65
+مَاذَا فَعَلْتَ فِي الْعُطْلَة؟|qu'as-tu fait pendant les vacances ?|假期你做了什么？|phrases|65
+إِلَى الْجَنُوب|vers le sud|往南方|phrases|65
+يَشْرَبُ|il boit|他喝|verbs|66
+تَشْرَبُ|tu bois (masculin), elle boit|你喝（男），她喝|verbs|66
+تَشْرَبِينَ|tu bois (féminin)|你喝（女）|verbs|66
+أَشْرَبُ|je bois|我喝|verbs|66
+يَجْلِسُ|il s'assoit|他坐下|verbs|66
+يَدْخُلُ|il entre|他进入|verbs|66
+دَخَلْتُ|je suis entré|我进去了|verbs|66
+دَخَلْتَ|tu es entré (masculin)|你进去了（男）|verbs|66
+دَخَلْتِ|tu es entrée (féminin)|你进去了（女）|verbs|66
+دَخَلَتْ|elle est entrée|她进去了|verbs|66
+سَيَّارَة|voiture|汽车|travel|67
+بَعِيد|loin|远的|qualities|67
+جَدِيدَة|nouvelle (féminin)|新的（阴性）|qualities|67
+شَيْخ|vieux cheikh, maître|谢赫，长者|people|67
+مَعْنًى|sens, signification|意思|concepts|67
+عِنْدَ|chez, avoir|在……处，拥有|grammar|67
+ذَهَبْتُ إِلَى الطَّبِيب|je suis allé chez le médecin|我去看医生了|phrases|67
+هَلْ يُوجَدُ خُبْز؟|y a-t-il du pain ?|有面包吗？|phrases|67
+الْخُبْزُ عَلَى الطَّاوِلَة|le pain est sur la table|面包在桌子上|phrases|67
+شَرِبْتُ قَهْوَة|j'ai bu un café|我喝了一杯咖啡|phrases|67
+دَرَسَ فِي الْمَدْرَسَة|il a étudié à l'école|他在学校学习了|phrases|67
+هَلْ أَنْتَ طَالِب؟|tu es étudiant ? (masculin)|你是学生吗？（男）|phrases|67
+ذَهَبْتُ إِلَى الْجَامِعَة|je suis allé à l'université|我去大学了|phrases|67
+دَرَسْتُ الْعَرَبِيَّة|j'ai étudié l'arabe|我学习了阿拉伯语|phrases|67
+سَكَنْتُ فِي بَارِيس|j'ai habité à Paris|我住过巴黎|phrases|67
+لَمْ أَشْرَبِ النَّبِيذَ وَلَكِنْ شَرِبْتُ عَصِيرَ الْبُرْتُقَال|je n'ai pas bu de vin mais du jus d'orange|我没喝葡萄酒，而喝了橙汁|phrases|67
+دَرَسْتَ|tu as étudié (masculin)|你学习了（男）|verbs|70
+دَرَسْتِ|tu as étudié (féminin)|你学习了（女）|verbs|70
+دَرَسَتْ|elle a étudié|她学习了|verbs|70
+دَرَسْنَا|nous avons étudié|我们学习了|verbs|70
+يَدْرُسُ|il étudie|他学习|verbs|70
+تَدْرُسُ|tu étudies (masculin), elle étudie|你学习（男），她学习|verbs|70
+تَدْرُسِينَ|tu étudies (féminin)|你学习（女）|verbs|70
+نَدْرُسُ|nous étudions|我们学习|verbs|70
+طَبَخَ|il a cuisiné|他做饭了|verbs|70
+أَطْبُخُ|je cuisine|我做饭|verbs|70
+يَطْبُخُ|il cuisine|他做饭|verbs|70
+دَجَاجَات|poulets|鸡（复数）|food|70
+قِطَار|train|火车|travel|70
+دَرْس|leçon|课|school|70
+عَرْض|exposé|报告，展示|school|70
+مَتْحَف|musée|博物馆|places|72
+تَارِيخ|histoire (discipline)|历史|school|72
+سِينَمَا|cinéma|电影院，电影|places|72
+بَدَأَ|il a commencé|他开始了|verbs|72
+نِهَايَة الأُسْبُوع|week-end|周末|time|72
+وَصَلْتُ|je suis arrivé|我到了|verbs|72
+سَافَرْتُ|j'ai voyagé|我旅行了|verbs|72
+فَرِح|heureux|快乐的|qualities|72
+اِشْتَرَيْتُ|j'ai acheté|我买了|verbs|72
+لَمْ أَشْتَرِ|je n'ai pas acheté|我没有买|verbs|72
+قَرَأْتُ|j'ai lu|我读了|verbs|72
+نَسِيتُ|j'ai oublié|我忘了|verbs|72
+بَقِيتُ|je suis resté|我留下了|verbs|72
+كُلّ يَوْم|chaque jour|每天|time|72
+ثَلَاثَة أَيَّام|trois jours|三天|time|72
+بِالْقُرْب مِنَ الْبَحْر|à côté de la mer|在海边附近|phrases|72
+مَرْحَبًا|bonjour, salut|你好|phrases|74
+أَهْلًا وَسَهْلًا|bienvenue, salut|欢迎，你好|phrases|74
+جَيِّد|bien, bon|好的|qualities|74
+تَفَضَّلِي|je t'en prie (féminin)|请（对女性）|phrases|74
+مَا فَهِمْتُ|je n'ai pas compris|我没听懂|phrases|74
+تَرْجَمَ|il a traduit|他翻译了|verbs|74
+تَرْجَمِي|traduis ! (féminin)|请翻译（对女性）|verbs|74
+لَوْ سَمَحْتَ|s'il te plaît (masculin)|请（对男性）|phrases|74
+أَعِدْ|répète ! (masculin)|请重复（对男性）|phrases|74
+أَعِيدِي|répète ! (féminin)|请重复（对女性）|phrases|74
+كَيْفَ تَقُولُ؟|comment dit-on ?|怎么说？|phrases|74
+يَعْنِي|cela signifie|意思是|grammar|74
+اِسْتِرَاحَة|pause|休息|time|74
+أَنَا بَلْجِيكِيّ|je suis belge (masculin)|我是比利时人（男）|people|74
+سُوَيْسِرِيّ|suisse (masculin)|瑞士人（男）|people|74
+بَلْجِيكِيَّة|belge (féminin)|比利时人（女）|people|74
+سُوَيْسِرِيَّة|suisse (féminin)|瑞士人（女）|people|74
+تَكَلَّمَ|il a parlé|他说话了|verbs|74
+أَتَكَلَّمُ شُوَيَّة|je parle un peu|我会说一点儿|phrases|74
+مَا مَعْنَى هَذَا؟|qu'est-ce que cela signifie ?|这是什么意思？|phrases|74
+نِيكُولَا|Nicolas (prénom)|尼古拉（人名）|people|73
+مَارِي|Marie (prénom)|玛丽（人名）|people|73
+جِيل|Gilles (prénom)|吉尔（人名）|people|73
+كْلُوي|Chloé (prénom)|克洛伊（人名）|people|73
+مِيشِيل|Michèle (prénom)|米歇尔（人名）|people|73
+مَارْك|Marc (prénom)|马克（人名）|people|73
+كَاتْرِين|Catherine (prénom)|卡特琳（人名）|people|73
+نِينَا|Nina (prénom)|妮娜（人名）|people|73
+مَاكْسِيم|Maxime (prénom)|马克西姆（人名）|people|73
+كْلِير|Claire (prénom)|克莱尔（人名）|people|73
+`;
+
 const THEME_ORDER = ['phrases','people','family','questions','numbers','time','qualities','home','school','food','places','travel','verbs','nature','body','grammar','concepts'];
-const WORDS = RAW.trim().split('\n').map((line, i) => { const [ar, fr, zh, theme, page] = line.split('|'); return { id: i + 1, ar, fr, zh, theme, page: Number(page) }; });
-const UNIQUE_WORDS = [...new Map(WORDS.map(w => [`${w.ar}|${w.fr}`, w])).values()];
+const WORDS = (RAW.trim()+'\n'+COURSE_RAW.trim()).split('\n').map((line, i) => { const [ar, fr, zh, theme, page] = line.split('|'); return { id: i + 1, ar, fr, zh, theme, page: Number(page) }; });
+const UNIQUE_WORDS = [...WORDS.reduce((map,w)=>{const key=`${w.ar}|${w.fr}`;if(map.has(key)){const old=map.get(key);old.pages=[...new Set([...old.pages,w.page])].sort((a,b)=>a-b)}else map.set(key,{...w,pages:[w.page]});return map},new Map()).values()];
 

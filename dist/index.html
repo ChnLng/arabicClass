@@ -10,7 +10,22 @@
   <title>حروف · 阿拉伯语词汇乐园</title>
 </head>
 <body>
-  <div class="app-shell">
+  <section id="access-gate" class="access-gate" aria-labelledby="gate-title">
+    <div class="gate-card">
+      <div class="gate-mark" aria-hidden="true">ح</div>
+      <div class="eyebrow">HURUF · ARABIC CLASS</div>
+      <h1 id="gate-title">欢迎回来<br><em>继续学阿拉伯语。</em></h1>
+      <p id="gate-subtitle">输入访问密码，打开你的词汇课堂。</p>
+      <form id="gate-form">
+        <label for="gate-code" id="gate-label">访问密码</label>
+        <input id="gate-code" type="password" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" required aria-describedby="gate-error">
+        <p id="gate-error" role="alert" aria-live="polite"></p>
+        <button class="primary-btn" type="submit"><span id="gate-open">打开课堂</span><span aria-hidden="true">↗</span></button>
+      </form>
+      <button id="gate-lang" class="gate-lang" type="button">Français</button>
+    </div>
+  </section>
+  <div class="app-shell hidden" id="learning-app">
     <header class="topbar">
       <div class="brand"><span class="brand-mark" aria-hidden="true">ح</span><div><strong>HURUF</strong><small id="brand-sub">从声音到文字</small></div></div>
       <div class="top-actions"><button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">中文 <span>⌄</span></button></div>
@@ -39,6 +54,7 @@
         <p id="library-desc" class="page-intro">按生活场景与语言结构整理，随时回到原图页码。</p>
         <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="搜索阿拉伯语、中文或法语" aria-label="Search vocabulary"></div>
         <div id="filter-scroll" class="filter-scroll" role="group" aria-label="Themes"></div>
+        <label class="page-filter-label" for="page-filter" id="page-filter-label">教材页码</label><select id="page-filter" class="page-filter"></select>
         <div class="list-meta"><span id="list-count"></span><button id="sort-btn" class="text-btn" type="button">按主题 ↕</button></div>
         <div id="word-list" class="word-list"></div>
       </section>
@@ -47,7 +63,8 @@
         <div class="eyebrow" id="practice-eyebrow">LISTEN · READ · REMEMBER</div>
         <h1 id="practice-title">专注练习</h1>
         <p id="practice-desc" class="page-intro">每轮 8 个词。先试着回忆，再揭开答案。</p>
-        <div class="practice-controls"><button class="mode-btn active" data-mode="flip" type="button" id="flip-mode">翻牌</button><button class="mode-btn" data-mode="listen" type="button" id="listen-mode">听音</button><button class="mode-btn" data-mode="trace" type="button" id="trace-mode">描摹</button></div>
+        <div class="practice-controls"><button class="mode-btn active" data-mode="flip" type="button" id="flip-mode">翻牌</button><button class="mode-btn" data-mode="listen" type="button" id="listen-mode">听音</button><button class="mode-btn" data-mode="trace" type="button" id="trace-mode">描摹</button><button class="mode-btn" data-mode="write" type="button" id="write-mode">默写</button></div>
+        <label class="page-filter-label" for="practice-page" id="practice-page-label">按教材页码练习</label><select id="practice-page" class="page-filter"></select>
         <div class="round-meta"><span id="round-count">01 / 08</span><span id="round-theme">—</span></div>
         <div class="round-progress"><span id="round-fill"></span></div>
         <div id="practice-stage"></div>
@@ -68,7 +85,7 @@
     </nav>
   </div>
   <div id="word-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-word"><div class="modal-sheet"><button id="close-modal" class="close-btn" type="button" aria-label="Close">×</button><div id="modal-body"></div></div></div>
-  <script src="vocab.js"></script><script src="app.js"></script>
+  <script src="gate.js"></script>
 </body>
 </html>
 
