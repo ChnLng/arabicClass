@@ -20,6 +20,7 @@
     past:['ـتُ 是很多过去时动词的“我”词尾，如 كَتَبْتُ＝我写了；词首形式则常用于现在/未完成体。','La terminaison ـتُ marque souvent « je » au passé, comme كَتَبْتُ. Une forme à préfixe sert souvent à l’inaccompli.'],
     preposition:['介词后通常接名词或代词形式；عِنْدِي 字面上是“在我这里”，常表示“我有”。','Après une préposition vient un nom ou un pronom suffixé. عِنْدِي signifie littéralement « chez moi » et souvent « j’ai ».'],
     negation:['لَا 常否定现在或一般陈述；لَيْسَ 是“不是”，会随人称、性别变化；مَا 也可参与否定。','لَا nie souvent une proposition au présent ; لَيْسَ veut dire « ne pas être » et se conjugue ; مَا peut aussi servir à la négation.'],
+    existential:['يُوجَد 表示“存在／有”。هُنَاكَ 本义“在那里”，也常用于“有……”的句型；否定可说 لَا يُوجَد。','يُوجَد signifie « il existe / il y a ». هُنَاكَ signifie d’abord « là-bas » et peut introduire « il y a ». Pour nier : لَا يُوجَد.'],
     plural:['阿拉伯语复数有规则形式，也有“破碎复数”，如 كِتَاب → كُتُب、بَيْت → بُيُوت，需连同单数一起记。','L’arabe connaît aussi des pluriels internes : كِتَاب → كُتُب et بَيْت → بُيُوت. Apprenez les deux formes ensemble.'],
     numbers:['数词与名词的性、数搭配有专门规则；入门先认读词形和发音，再在句子里学习一致关系。','L’accord des nombres avec les noms a ses propres règles. Commencez par reconnaître la forme et le son, puis étudiez l’accord en contexte.'],
     phrase:['这是固定表达，整体记忆更自然；其中的词形可能与单独列出的词不同。','C’est une expression à apprendre comme un ensemble ; la forme des mots peut différer de celle du lexique isolé.'],
@@ -41,6 +42,7 @@
     if(['هَذَا','هَذِهِ','ذَلِكَ'].includes(w.ar))return 'demonstrative';
     if(['هَلْ','مَا','مَنْ','مَاذَا','أَيْنَ','كَيْفَ','مَتَى','لِمَاذَا','كَمْ'].includes(w.ar))return 'question';
     if(['لَا','لَيْسَ'].includes(w.ar))return 'negation';
+    if(['يُوجَد','هُنَاكَ','لَا يُوجَد','مَا كَانَ يُوجَد'].includes(w.ar))return 'existential';
     if(['كُتُب','بُيُوت','بِلَاد','طُلَّاب'].includes(w.ar))return 'plural';
     if(w.theme==='numbers')return 'numbers';
     if(w.theme==='phrases')return 'phrase';
