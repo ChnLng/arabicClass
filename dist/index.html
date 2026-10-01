@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f8f6">
+  <meta name="description" content="用中文或法语学习阿拉伯语：翻牌、听音、描摹、分类和语法。">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>حروف · 阿拉伯语词汇乐园</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">ح</span><div><strong>HURUF</strong><small id="brand-sub">从声音到文字</small></div></div>
+      <div class="top-actions"><button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">中文 <span>⌄</span></button></div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section id="home-view" class="view active" aria-label="Home">
+        <div class="eyebrow" id="eyebrow">ARABIC, ONE WORD AT A TIME</div>
+        <h1 id="hero-title">每天一点点，<br><em>听懂阿拉伯语。</em></h1>
+        <p id="hero-desc" class="hero-desc">从参考图片中的词汇出发。翻牌、听音、描摹，让每个词都留下印象。</p>
+        <div class="hero-card">
+          <div class="hero-card-top"><span id="today-label">今日学习</span><span class="sun" aria-hidden="true">✳</span></div>
+          <div class="hero-card-middle"><div><strong id="streak-num">0</strong><span id="streak-label">天连续学习</span></div><div class="hero-stat"><strong id="learned-num">0</strong><span id="learned-label">已掌握词汇</span></div></div>
+          <div class="progress-track"><span id="progress-fill"></span></div>
+          <small id="progress-text">开始你的第一组 8 个词</small>
+        </div>
+        <button id="start-btn" class="primary-btn" type="button"><span id="start-text">开始今日练习</span><span aria-hidden="true">↗</span></button>
+        <div class="section-head"><h2 id="path-title">探索词汇</h2><span id="path-count"></span></div>
+        <div id="featured-themes" class="theme-grid"></div>
+        <div class="tip-card"><div class="tip-icon">✧</div><div><strong id="tip-title">学习方法</strong><p id="tip-desc">先听，试着读；翻牌核对，再用手指描摹。错词会更早回来。</p></div></div>
+      </section>
+
+      <section id="library-view" class="view" aria-label="Vocabulary">
+        <div class="eyebrow" id="library-eyebrow">YOUR WORD COLLECTION</div>
+        <h1 id="library-title">词汇图谱</h1>
+        <p id="library-desc" class="page-intro">按生活场景与语言结构整理，随时回到原图页码。</p>
+        <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="搜索阿拉伯语、中文或法语" aria-label="Search vocabulary"></div>
+        <div id="filter-scroll" class="filter-scroll" role="group" aria-label="Themes"></div>
+        <div class="list-meta"><span id="list-count"></span><button id="sort-btn" class="text-btn" type="button">按主题 ↕</button></div>
+        <div id="word-list" class="word-list"></div>
+      </section>
+
+      <section id="practice-view" class="view" aria-label="Practice">
+        <div class="eyebrow" id="practice-eyebrow">LISTEN · READ · REMEMBER</div>
+        <h1 id="practice-title">专注练习</h1>
+        <p id="practice-desc" class="page-intro">每轮 8 个词。先试着回忆，再揭开答案。</p>
+        <div class="practice-controls"><button class="mode-btn active" data-mode="flip" type="button" id="flip-mode">翻牌</button><button class="mode-btn" data-mode="listen" type="button" id="listen-mode">听音</button><button class="mode-btn" data-mode="trace" type="button" id="trace-mode">描摹</button></div>
+        <div class="round-meta"><span id="round-count">01 / 08</span><span id="round-theme">—</span></div>
+        <div class="round-progress"><span id="round-fill"></span></div>
+        <div id="practice-stage"></div>
+        <div id="round-complete" class="round-complete hidden"></div>
+      </section>
+
+      <section id="sources-view" class="view" aria-label="Sources">
+        <div class="eyebrow">LEARNING NOTES</div><h1 id="source-title">学习说明</h1>
+        <div id="sources-content" class="sources-content"></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-btn active" data-view="home" type="button"><span class="nav-icon">⌂</span><span id="nav-home">首页</span></button>
+      <button class="nav-btn" data-view="library" type="button"><span class="nav-icon">▤</span><span id="nav-library">词汇</span></button>
+      <button class="nav-btn" data-view="practice" type="button"><span class="nav-icon">◈</span><span id="nav-practice">练习</span></button>
+      <button class="nav-btn" data-view="sources" type="button"><span class="nav-icon">ⓘ</span><span id="nav-sources">说明</span></button>
+    </nav>
+  </div>
+  <div id="word-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-word"><div class="modal-sheet"><button id="close-modal" class="close-btn" type="button" aria-label="Close">×</button><div id="modal-body"></div></div></div>
+  <script src="vocab.js"></script><script src="app.js"></script>
+</body>
+</html>
+
