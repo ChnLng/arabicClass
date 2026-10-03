@@ -489,6 +489,67 @@ const RAW = `
 جَيِّد|bon, bien|好的|qualities|77
 جَيْش|armée|军队|concepts|77
 حَال|état, condition|状态；情况|concepts|77
+مَرْحَبًا|salut, bonjour|你好|phrases|13
+أَهْلًا وَسَهْلًا|bienvenue, bonjour|欢迎；你好|phrases|13
+اِسْمِي|je m'appelle|我的名字是……|phrases|13
+مَا اسْمُكَ؟|comment t'appelles-tu ? (masculin)|你叫什么名字？（对男性）|questions|13
+مَا اسْمُكِ؟|comment t'appelles-tu ? (féminin)|你叫什么名字？（对女性）|questions|13
+كَيْفَ الْحَال؟|comment ça va ?|你好吗？|phrases|13
+وَالْحَمْدُ لِلّٰهِ|Dieu merci|感谢真主|phrases|13
+فَرَنْسِيّ|français (masculin)|法国的；法国人（男）|people|13
+فَرَنْسِيَّة|française (féminin)|法国的；法国人（女）|people|13
+بَلْجِيكِيّ|belge (masculin)|比利时人（男）|people|13
+بَلْجِيكِيَّة|belge (féminin)|比利时人（女）|people|13
+سُوَيْسِرِيّ|suisse (masculin)|瑞士人（男）|people|13
+سُوَيْسِرِيَّة|suisse (féminin)|瑞士人（女）|people|13
+أَنَا فَرَنْسِيّ|je suis français|我是法国人（男）|phrases|13
+أَنَا بَلْجِيكِيّ|je suis belge|我是比利时人（男）|phrases|13
+أَيْنَ تَسْكُنُ؟|où habites-tu ? (masculin)|你住在哪里？（对男性）|questions|13
+أَيْنَ تَسْكُنِينَ؟|où habites-tu ? (féminin)|你住在哪里？（对女性）|questions|13
+بَارِيس|Paris|巴黎|places|13
+بْرُوكْسِل|Bruxelles|布鲁塞尔|places|13
+جِنِيف|Genève|日内瓦|places|13
+لَنْدَن|Londres|伦敦|places|13
+لِيُون|Lyon|里昂|places|13
+أَيْنَ دَرَسْتَ الْعَرَبِيَّة؟|où as-tu étudié l'arabe ? (masculin)|你在哪里学过阿拉伯语？（对男性）|questions|13
+دَرَسْتُ الْعَرَبِيَّة|j'ai étudié l'arabe|我学过阿拉伯语|phrases|13
+مَاذَا فَعَلْتَ فِي الْعُطْلَة؟|qu'as-tu fait pendant les vacances ?|你假期做了什么？|questions|13
+سَافَرْتُ إِلَى الْجَنُوب|j'ai voyagé dans le sud|我去了南方旅行|phrases|13
+أَكَلْتُ|j'ai mangé|我吃了|verbs|13
+شَرِبْتُ|j'ai bu|我喝了|verbs|13
+مُمْتَاز|excellent|优秀的|qualities|13
+مَا فَهِمْتُ|je n'ai pas compris|我没听懂|phrases|13
+تَرْجِمْ|traduis ! (masculin)|请翻译（对男性）|verbs|13
+لَوْ سَمَحْتَ|s'il te plaît (masculin)|请（对男性）|phrases|13
+مِنْ فَضْلِكَ|s'il te plaît (masculin)|请（对男性）|phrases|13
+أَعِدْ|répète ! (masculin)|请重复（对男性）|verbs|13
+مَا مَعْنَى هَذَا؟|qu'est-ce que cela signifie ?|这是什么意思？|questions|13
+يَعْنِي|c'est-à-dire|也就是说|grammar|13
+لَا أَعْرِفُ|je ne sais pas|我不知道|phrases|13
+اِسْتِرَاحَة|pause|休息|time|13
+كُلُّهُ تَمَام|tout va bien|一切都好|phrases|13
+قَائِدُون|chefs, commandants|领导者们；指挥官们|people|199
+بَحَثَ|chercher|寻找|verbs|199
+يَبْحَثُ|il cherche|他寻找|verbs|199
+أَشْيَاء|choses|事物（复数）|concepts|199
+أَوْلَاد|enfants|孩子们|family|199
+أَصْحَاب|copains|伙伴们|people|199
+أَلْوَان|couleurs|颜色（复数）|concepts|199
+حَقُوق|droits|权利（复数）|concepts|199
+دُرُوس|cours|课程（复数）|school|199
+يَطْبُخُ|il cuisine|他做饭|verbs|199
+مَطَابِخ|cuisines|厨房（复数）|home|199
+طَلَبَ|commander, demander|点单；请求|verbs|199
+يَطْلُبُ|il commande|他点单；请求|verbs|199
+فَهِمَ|comprendre|理解|verbs|199
+يَفْهَمُ|il comprend|他理解|verbs|199
+عَرَفَ|connaître|知道；认识|verbs|199
+يَعْرِفُ|il connaît|他认识|verbs|199
+سُعَدَاء|heureux (pluriel)|快乐的人们|qualities|199
+قَادَة|commandants|指挥官们|people|199
+نَوَافِذ|fenêtres|窗户（复数）|home|199
+مَفَاتِيح|clés|钥匙（复数）|home|199
+زُمَلَاء|collègues|同事们|people|199
 رَئِيس|président|主席，总统|people|78
 طَيَّار|pilote|飞行员|people|78
 مُوَظَّف|employé|雇员|people|200
