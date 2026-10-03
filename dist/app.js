@@ -23,6 +23,9 @@
     existential:['يُوجَد 表示“存在／有”。هُنَاكَ 本义“在那里”，也常用于“有……”的句型；否定可说 لَا يُوجَد。','يُوجَد signifie « il existe / il y a ». هُنَاكَ signifie d’abord « là-bas » et peut introduire « il y a ». Pour nier : لَا يُوجَد.'],
     plural:['阿拉伯语复数有规则形式，也有“破碎复数”，如 كِتَاب → كُتُب、بَيْت → بُيُوت，需连同单数一起记。','L’arabe connaît aussi des pluriels internes : كِتَاب → كُتُب et بَيْت → بُيُوت. Apprenez les deux formes ensemble.'],
     numbers:['数词与名词的性、数搭配有专门规则；入门先认读词形和发音，再在句子里学习一致关系。','L’accord des nombres avec les noms a ses propres règles. Commencez par reconnaître la forme et le son, puis étudiez l’accord en contexte.'],
+    article:['الـ 是定冠词，类似法语 le／la；接在“太阳字母”前时，ل 通常不发音，后面的辅音读双音，如 الشَّمْس。','الـ est l’article défini. Devant une lettre solaire, son ل s’assimile à la consonne suivante : الشَّمْس se prononce avec un ش redoublé.'],
+    tanwin:['词尾的 ـٌ、ـٍ、ـً 叫“叠元音”（tanwīn），常表示不定名词的格尾；停顿或日常朗读时可能不读出完整词尾。','Les signes ـٌ, ـٍ et ـً sont le tanwīn. Ils marquent souvent une terminaison de nom indéfini ; la finale peut changer ou disparaître à la pause.'],
+    hamza:['ء 是“哈姆扎”，表示喉塞音；可单写，也可附在 أ、إ、ؤ、ئ 上。默写时要留意位置。','La hamza ء note une occlusion glottale. Elle peut être isolée ou portée par أ, إ, ؤ ou ئ ; sa position compte à l’écrit.'],
     phrase:['这是固定表达，整体记忆更自然；其中的词形可能与单独列出的词不同。','C’est une expression à apprendre comme un ensemble ; la forme des mots peut différer de celle du lexique isolé.'],
     general:['阿拉伯语从右向左写。短元音符号有助于初学者朗读，但在日常印刷文本中常被省略。','L’arabe s’écrit de droite à gauche. Les signes de voyelles courtes aident les débutants, mais sont souvent omis dans les textes courants.']
   };
@@ -42,6 +45,8 @@
   const noteFor = w => {
     if(['أَنَا','أَنْتَ','أَنْتِ','هُوَ','هِيَ','نَحْنُ','أَنْتُمْ','هُمْ'].includes(w.ar))return 'pronouns';
     if(['هَذَا','هَذِهِ','ذَلِكَ'].includes(w.ar))return 'demonstrative';
+    if(w.ar.startsWith('الْ')||w.ar.startsWith('الشَّ')||w.ar.startsWith('الرَّ')||w.ar.startsWith('السَّ'))return 'article';
+    if(/[ًٌٍ]/.test(w.ar))return 'tanwin';
     if(['هَلْ','مَا','مَنْ','مَاذَا','أَيْنَ','كَيْفَ','مَتَى','لِمَاذَا','كَمْ'].includes(w.ar))return 'question';
     if(['لَا','لَيْسَ'].includes(w.ar))return 'negation';
     if(['يُوجَد','هُنَاكَ','لَا يُوجَد','مَا كَانَ يُوجَد'].includes(w.ar))return 'existential';
@@ -51,6 +56,7 @@
     if(w.theme==='grammar')return 'preposition';
     if(w.theme==='verbs'&&w.ar.endsWith('تُ'))return 'past';
     if(w.theme==='verbs'&&/^أ[َُ]/.test(w.ar))return 'present';
+    if(w.ar.includes('ء')||/[أإؤئ]/.test(w.ar))return 'hamza';
     if(w.ar.endsWith('ة')||w.ar.endsWith('َة'))return 'gender';
     return 'general';
   };
