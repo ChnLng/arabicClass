@@ -10,7 +10,7 @@
   function loadScript(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=reject;document.body.append(s)})}
   async function unlock(){
     $('access-gate').classList.add('hidden');$('learning-app').classList.remove('hidden');
-    await loadScript('vocab.js');await loadScript('app.js');
+    await loadScript('vocab.js');await loadScript('learning.js');await loadScript('app.js');
   }
   $('gate-form').addEventListener('submit',async e=>{
     e.preventDefault();const bytes=new TextEncoder().encode($('gate-code').value);

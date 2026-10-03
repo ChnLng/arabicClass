@@ -51,7 +51,12 @@
 
       <section id="library-view" class="view" aria-label="Vocabulary">
         <div class="eyebrow" id="library-eyebrow">YOUR WORD COLLECTION</div>
-        <h1 id="library-title">词汇图谱</h1>
+        <div class="library-heading"><h1 id="library-title">词汇图谱</h1><button id="range-toggle" class="range-toggle" type="button" aria-expanded="false" aria-controls="range-form"><span aria-hidden="true">▤</span><span id="range-toggle-text">书页检索</span></button></div>
+        <form id="range-form" class="range-form hidden" aria-label="书页范围检索">
+          <div class="range-fields"><label for="range-start" id="range-start-label">从第</label><input id="range-start" type="number" inputmode="numeric" min="1" max="9999" placeholder="20" required><span class="range-dash" aria-hidden="true">—</span><label for="range-end" id="range-end-label">到第</label><input id="range-end" type="number" inputmode="numeric" min="1" max="9999" placeholder="30" required><span id="range-page-suffix">页</span></div>
+          <div class="range-actions"><button id="range-clear" type="button">清除</button><button id="range-apply" type="submit">筛选 ↗</button></div>
+          <p id="range-error" class="range-error" role="alert" aria-live="polite"></p>
+        </form>
         <p id="library-desc" class="page-intro">按生活场景与语言结构整理，随时回到原图页码。</p>
         <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="搜索阿拉伯语、中文或法语" aria-label="Search vocabulary"></div>
         <div id="filter-scroll" class="filter-scroll" role="group" aria-label="Themes"></div>
@@ -60,12 +65,31 @@
         <div id="word-list" class="word-list"></div>
       </section>
 
+      <section id="alphabet-view" class="view" aria-label="Arabic alphabet">
+        <div class="eyebrow">LETTERS · SOUNDS · SHAPES</div>
+        <h1 id="alphabet-title">从字母开始</h1>
+        <p id="alphabet-desc" class="page-intro"></p>
+        <div id="alphabet-intro" class="lesson-intro"></div>
+        <div id="alphabet-grid" class="alphabet-grid"></div>
+        <h2 id="signs-title" class="lesson-heading"></h2>
+        <div id="signs-grid" class="signs-grid"></div>
+        <p id="alphabet-source" class="learning-source"></p>
+      </section>
+
+      <section id="grammar-view" class="view" aria-label="Arabic grammar">
+        <div class="eyebrow">A SIMPLE GRAMMAR PATH</div>
+        <h1 id="grammar-title">语法从零开始</h1>
+        <p id="grammar-desc" class="page-intro"></p>
+        <div id="grammar-lessons" class="grammar-lessons"></div>
+        <p id="grammar-source" class="learning-source"></p>
+      </section>
+
       <section id="practice-view" class="view" aria-label="Practice">
         <div class="eyebrow" id="practice-eyebrow">LISTEN · READ · REMEMBER</div>
         <h1 id="practice-title">专注练习</h1>
         <p id="practice-desc" class="page-intro">每轮 8 个词。先试着回忆，再揭开答案。</p>
         <div class="practice-controls"><button class="mode-btn active" data-mode="flip" type="button" id="flip-mode">翻牌</button><button class="mode-btn" data-mode="listen" type="button" id="listen-mode">听音</button><button class="mode-btn" data-mode="trace" type="button" id="trace-mode">描摹</button><button class="mode-btn" data-mode="write" type="button" id="write-mode">默写</button></div>
-        <label class="page-filter-label" for="practice-page" id="practice-page-label">按教材页码练习</label><select id="practice-page" class="page-filter"></select>
+        <div class="practice-scope"><span id="practice-page-label">练习全部书页</span><button id="practice-range-link" type="button">设置页码范围 ↗</button></div><select id="practice-page" class="page-filter" aria-hidden="true" tabindex="-1"></select>
         <div class="round-meta"><span id="round-count">01 / 08</span><span id="round-theme">—</span></div>
         <div class="round-progress"><span id="round-fill"></span></div>
         <div id="practice-stage"></div>
@@ -81,6 +105,8 @@
     <nav class="bottom-nav" aria-label="Main navigation">
       <button class="nav-btn active" data-view="home" type="button"><span class="nav-icon">⌂</span><span id="nav-home">首页</span></button>
       <button class="nav-btn" data-view="library" type="button"><span class="nav-icon">▤</span><span id="nav-library">词汇</span></button>
+      <button class="nav-btn" data-view="alphabet" type="button"><span class="nav-icon arabic-nav">ا</span><span id="nav-alphabet">字母</span></button>
+      <button class="nav-btn" data-view="grammar" type="button"><span class="nav-icon">∴</span><span id="nav-grammar">语法</span></button>
       <button class="nav-btn" data-view="practice" type="button"><span class="nav-icon">◈</span><span id="nav-practice">练习</span></button>
       <button class="nav-btn" data-view="sources" type="button"><span class="nav-icon">ⓘ</span><span id="nav-sources">说明</span></button>
     </nav>
